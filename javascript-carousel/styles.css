@@ -1,0 +1,44 @@
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 10px;
+}
+
+.right {
+  transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+}
+
+.left-arrow {
+  padding: 0 6rem 0 0;
+}
+
+.right-arrow {
+  padding: 0 0 0 6rem;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  border-style: solid;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.current-image {
+  background-color: black;
+}
+
+.hidden {
+  display: none;
+}
