@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ES6-Destructuring</title>
+</head>
+<body>
+  <script>
+  const book1 = {
+    title: 'Goodnight Punpun',
+    author: 'Inio Asano',
+    libraryID: 3353
+};
+
+const book2 = {
+    title: 'Les Fleurs du mal',
+    author: 'Charles Baudelaire',
+    libraryID: 2345
+};
+
+const library = [
+    {
+      title: 'The Road Ahead',
+      suthor: 'Bill Gates',
+      libraryID: 1254
+    },
+    {
+      title: 'Walter Isaacson',
+      author: 'Steve Jobs',
+      libraryID: 4264
+    },
+    {
+      title: 'Mockingjay: The Final Book of The Hunger Games',
+      author: 'Suzanne Colling',
+      libraryID: '3245'
+    },
+    {
+      title: "Dead Dead Demon's De De De De Destruction",
+      author: 'Inio Asano',
+      libraryID: 1233
+    }
+];
+
+const { title, author, libraryID } = book1;
+const { title: bookTitle2, author: authorName2, libraryID: libID2 } = book2;
+const [book3, book4, book5] = library;
+const [, , , book6] = library;
+
+console.log(`The title of the book is ${title}, the author is ${author}, and the library Id is ${libraryID}`);
+console.log(`The title of the book is ${bookTitle2}, the author is ${authorName2}, and the library ID is ${libID2}`);
+console.log('book3:', book3);
+console.log('book4:', book4);
+console.log('book5:', book5);
+console.log('book6:', book6);
+  </script>
+</body>
+</html>
