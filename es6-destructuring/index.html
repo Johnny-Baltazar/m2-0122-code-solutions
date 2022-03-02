@@ -43,12 +43,12 @@ const library = [
     }
 ];
 
-const { title: bookTitle1, author: authorName1, libraryID: libID1 } = book1;
+const { title, author, libraryID } = book1;
 const { title: bookTitle2, author: authorName2, libraryID: libID2 } = book2;
 const [book3, book4, book5] = library;
-const [, book6] = library;
+const [, , , book6] = library;
 
-console.log(`The title of the book is ${bookTitle1}, the author is ${authorName1}, and the libbrary Id is ${libID1}`);
+console.log(`The title of the book is ${title}, the author is ${author}, and the library Id is ${libraryID}`);
 console.log(`The title of the book is ${bookTitle2}, the author is ${authorName2}, and the library ID is ${libID2}`);
 console.log('book3:', book3);
 console.log('book4:', book4);
