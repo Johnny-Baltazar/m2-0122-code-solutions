@@ -1,0 +1,356 @@
+    1  git config --global user.name "Johnny Baltazar"
+    2  git config --global user.email "baltazarjohnny@yahoo.com"
+    3  git config --global --list
+    4  cd ~/repos/m2-0122-code-solutions/
+    5  http https://example.com
+    6  cd ~/repos/m2-0122-code-solutions/
+    7  http https://example.com
+    8  http --ciphers=ECDHE-RSA-AES128-GCM-SHA256 https://pie.dev/get
+    9  https httpie.io/hello
+   10  http --verbose http://www.example.com
+   11  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+   12  http --body GET https://example.com > http-messages/index.html
+   13  git branch http-messages
+   14  git switch http-messages 
+   15  git add http-messages
+   16  git commit -m "Completed http-messages"
+   17  git push origin http-messages
+   18  git switch master
+   19  git pull origin master
+   20  git branch javascript-ajax
+   21  git switch javascript-ajax
+   22  git add javascript-ajax/
+   23  git commit -m "Completed javascript-ajax"
+   24  git push origin javascript-ajax
+   25  git switch master
+   26  git pull origin master
+   27  cd repos/driving-game
+   28  cd ~/repos/driving-game/
+   29  git switch master
+   30  git pull origin master
+   31  git switch issue-4-user-can-stop-car 
+   32  git add driving-game/
+   33  git commit -m "Issue-4-user-can-stop-their-car. #4"
+   34  git add driving-game/
+   35  git status
+   36  git commit -m "Issue-4-user-can-stop-their-car. #4"
+   37  git status
+   38  git add driving-game
+   39  git status
+   40  git commit -m "Issue-4-user-can-stop-their-car. #4"
+   41  git push origin issue-4-user-can-stop-car 
+   42  git checkout master
+   43  git merge --no-ff issue-4-user-can-stop-car
+   44  git status
+   45  git merge --abort
+   46  git status
+   47  git switch issue-4-user-can-stop-car 
+   48  git status
+   49  git switch master
+   50  git pull origin master
+   51  git branch issue-4-user-can-steer-their-car
+   52  git branch issue-5-user-can-steer-their-car
+   53  git switch issue-5-user-can-steer-their-car 
+   54  git add driving-game/
+   55  git commit -m "Issue-5-user-can-steer-their-car. #5"
+   56  git push origin issue-5-user-can-steer-their-car 
+   57  git status
+   58  git add driving-game/
+   59  git status
+   60  git add driving-game/
+   61  git commit -m "Issue-5-user-can-steer-their-car. #5"
+   62  git add images/explosion2.png 
+   63  git add images/race-car.jpg 
+   64  git commit -m "Issue-5-user-can-steer-their-car. #5"
+   65  git push origin issue-5-user-can-steer-their-car 
+   66  git status
+   67  git switch master
+   68  cd ~/repos
+   69  ls
+   70  git switch driving-game/
+   71  cd driving-game/
+   72  git pull origin master
+   73  git switch repos
+   74  cd repos
+   75  cd ~/repos
+   76  GET /decode_vin?vin=4F2YU09161KM33122 HTTP/1.1 X-Rapidapi-Host: vindecoder.p.rapidapi.com X-Rapidapi-Key: SIGN-UP-FOR-KEY Host: vindecoder.p.rapidapi.com
+   77  http GET /decode_vin?vin=4F2YU09161KM33122 HTTP/1.1 X-Rapidapi-Host: vindecoder.p.rapidapi.com X-Rapidapi-Key: SIGN-UP-FOR-KEY Host: vindecoder.p.rapidapi.com
+   78  http GET /decode_vin?vin=4F2YU09161KM33122 HTTP X-Rapidapi-Host: vindecoder.p.rapidapi.com X-Rapidapi-Key: SIGN-UP-FOR-KEY Host: vindecoder.p.rapidapi.com
+   79  http GET /decode_vin?vin=4F2YU09161KM33122 X-Rapidapi-Host: vindecoder.p.rapidapi.com X-Rapidapi-Key: SIGN-UP-FOR-KEY Host: vindecoder.p.rapidapi.com
+   80  http https://vpic.nhtsa.dot.gov/api/
+   81  clear
+   82  http https://vpic.nhtsa.dot.gov/api/vehicles/GetParts?type=565&fromDate=1/1/2015&toDate=5/5/2015&format=json
+   83  clear
+   84  http /vehicles/GetParts?type=565&fromDate=1/1/2015&toDate=5/5/2015&format=xml&page=1
+   85  http https://vpic.nhtsa.dot.gov/api/vehicles/GetParts?type=565&fromDate=1/1/2015&toDate=5/5/2015&format=xml
+   86  http --verbose https://vpic.nhtsa.dot.gov/api/vehicles/GetParts?type=565&fromDate=1/1/2015&toDate=5/5/2015&format=xml
+   87  http https://imsea.herokuapp.com/api/1?q=google%20chrome
+   88  cd ~/repos
+   89  git clone git@github.com:johnny-baltazar/ajax-project.git
+   90  cd ajax-project
+   91  npm ci
+   92  git pull origin master
+   93  git branch user-can-view-a-list-of-engines
+   94  git switch user-can-view-a-list-of-engines
+   95  git status
+   96  git add css/layout.css 
+   97  git add css/styles.css 
+   98  git add index.html 
+   99  git add js/main.js 
+  100  git add images/wrx-sti.jpg 
+  101  git add images/b18c1.jfif 
+  102  git commit -m "Create a header. #1"
+  103  git push origin ajax-project
+  104  git push origin user-can-view-a-list-of-engines 
+  105  git status
+  106  git add css/layout.css 
+  107  git add css/styles.css 
+  108  git add index.html 
+  109  git add images/b16a2.jpg 
+  110  git add images/camaro-ls3.jpg 
+  111  git commit -m "Add example engine images with headings. #1"
+  112  git push origin user-can-view-a-list-of-engines 
+  113  git status
+  114  git add css/layout.css 
+  115  git add css/st
+  116  git add css/styles.css 
+  117  git add index.html 
+  118  git add js/main.js 
+  119  git commit -m "User can view a list of engines. #1"
+  120  git push origin user-can-view-a-list-of-engines 
+  121  git switch master
+  122  git pull origin master
+  123  git branch user-can-view-each-engine-application
+  124  git switch user-can-view-each-engine-application 
+  125  git status
+  126  git add css/layout.css 
+  127  git add css/styles.css 
+  128  git add index.html 
+  129  git add js/data.js 
+  130  git add js/main.js 
+  131  git commit -m "add a sibling `div[data-view="entries"]` element in the HTML. #2"
+  132  git push origin user-can-view-each-engine-application 
+  133  git status
+  134  git add css/styles.css 
+  135  git add index.html 
+  136  git add images/b16a2-ecu.jpg 
+  137  git add images/wrx-downpipe.jpg 
+  138  git commit -m "Add an empty unordered list to the `div[data-view="entries"]` elements in the HTML. #2"
+  139  git push origin user-can-view-each-engine-application 
+  140  cd ~/repos/m2-0122-code-solutions/
+  141  git branch es6-const-let
+  142  git switch es6-const-let 
+  143  git switch master
+  144  git pull origin master
+  145  git switch es6-const-let 
+  146  git add es6-const-let/
+  147  git commit -m "Completed es6-const-let"
+  148  git push origin es6-const-let 
+  149  git switch master
+  150  git pull origin master
+  151  git branch es6-template-literals
+  152  git switch es6-template-literals 
+  153  git add es6-template-literals/
+  154  git commit -m "Completed es6-template-literals"
+  155  git push origin es6-template-literals 
+  156  git switch master
+  157  git pull origin master
+  158  git branch es6-destructuring
+  159  git switch es6-destructuring 
+  160  git add es6-destructuring
+  161  git commit -m "Completed es6-destructuring"
+  162  git push origin es6-destructuring
+  163  git switch master
+  164  git switch es6-destructuring
+  165  git add es6-destructuring 
+  166  git commit -m "Delete commented out code."
+  167  git push origin es6-destructuring
+  168  git switc master
+  169  git switch master
+  170  git pull origin master
+  171  git branch es6-arrow-functions
+  172  git switch es6-arrow-functions 
+  173  git add es6-s
+  174  git add es6-arrow-functions/
+  175  git commit -m "Completed es6-arrow-functions"
+  176  git push origin es6-arrow-functions 
+  177  git switch master
+  178  git pull origin master
+  179  git branch command-line-basics
+  180  git switch command-line-basics
+  181  pwd
+  182  man
+  183  man man
+  184  man cat
+  185  cat laziness.txt
+  186  man cat
+  187  cat [laziness.txt]
+  188  cd command-line-basics/
+  189  cat laziness.txt
+  190  cat impatience.txt
+  191  cat hubris.txt
+  192  cat laziness.txt > impatience.txt > hubris.txt
+  193  pwd
+  194  ls
+  195  cat hubris.txt 
+  196  cat laziness.txt 
+  197  cat laziness.txt impatience.txt 
+  198  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  199  cat three-virtues.txt 
+  200  git rm laziness.txt 
+  201  rm laziness.txt 
+  202  cat
+  203  cd ~/repos/m2-0122-code-solutions/
+  204  cd command-line-basics/
+  205  cat laziness.txt 
+  206  cat impatience.txt 
+  207  cat hubris.txt 
+  208  cat laziness.txt impatience.txt
+  209  cat laziness
+  210  cat laziness.txt 
+  211  cat laziness.txt impatience.txt hubris.txt 
+  212  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  213  cat three-virtues.txt
+  214  man ls
+  215  ls a
+  216  ls
+  217  man ls
+  218  ls-a
+  219  lss
+  220  lsa
+  221  git ls
+  222  ls
+  223  man ls
+  224  ls all
+  225  ls--all
+  226  man ls
+  227  ls-a
+  228  ls - a
+  229  ls a 
+  230  ls all
+  231  ls--all
+  232  ls-all
+  233  git ls-a
+  234  git ls a 
+  235  ls-a
+  236  ls -a
+  237  ls -all
+  238  man ls
+  239  ls -A
+  240  ls --author
+  241  ls --author -l
+  242  ls -C
+  243  ls -d
+  244  ls -lfz-staff
+  245  ls lfz-staff
+  246  ls -aF lfz-staff > lfz-staff/contents.txt
+  247  ls lfs.staff/contents.txt
+  248  lfz.staff/contents.txt
+  249  ls lfz.staff/contents.txt
+  250  cat lfz-staff/contents.txt
+  251  man ls
+  252  man pwd
+  253  man ls
+  254  pwd
+  255  pwd > i-was-here.txt
+  256  ls
+  257  cat i-was-here.txt 
+  258  man echo
+  259  echo 'Hello, World!'
+  260  echo 'Hello, World!' > hello.text
+  261  ls
+  262  cat hello.txt
+  263  cat hello.text 
+  264  rm hello.text 
+  265  ls
+  266  echo 'Hello, World!'
+  267  echo 'Hello, World!' > hello.txt
+  268  ls
+  269  cat hello.txt
+  270  man touch
+  271  man echo
+  272  touch 
+  273  touch > tag-youre-it.txt
+  274  ls
+  275  touch > boop.txt
+  276  ls
+  277  rm boop.txt
+  278  ls
+  279  touch > boop.txt > snoot/
+  280  ls
+  281  boop.txt > snoot
+  282  ls snoot
+  283  rm boop.txt 
+  284  ls
+  285  touch man
+  286  man touch 
+  287  touch > boop.txt/snoot
+  288  ls
+  289  ls snoot
+  290  touch > snoot/boop.txt
+  291  ls
+  292  ls snoot
+  293  man mkdir
+  294  mkdit parent
+  295  ls
+  296  ls parent
+  297  mkdir parent
+  298  ls
+  299  ls parent
+  300  mkdir parent
+  301  ls parent
+  302  ls parent/
+  303  man mkdir
+  304  mkdir -p parent/child/grandchild
+  305  ls
+  306  ls parent
+  307  ls child
+  308  mkdir -p child/grandchild
+  309  ls parent
+  310  ls child
+  311  touch .gitkeep > parent/child/grandchild
+  312  ls parent
+  313  ls child
+  314  ls grandchild
+  315  ls -a grandchild
+  316  ls -a parent
+  317  ls -a child
+  318  ls a grandchild
+  319  touch .gitkeep > grandchild
+  320  ls -a grandchild
+  321  man ls
+  322  man mkdir
+  323  touch > parent/child/grandchild/.gitkeep
+  324  ls parent
+  325  ls grandchild
+  326  ls -a parent
+  327  ls -a parent/child/grandchild
+  328  man mx
+  329  man mv
+  330  mv pokiemans > pokemon
+  331  ls
+  332  rm pokemon
+  333  mv pokiemans pokemon
+  334  ls
+  335  man rm
+  336  rm lol.txt
+  337  ls
+  338  man rm
+  339  rm -r kill-me
+  340  ls
+  341  man cp
+  342  cp and-then.txt > no-and-then.txt
+  343  ls
+  344  cat and-then.txt no-and-then.txt 
+  345  cat and-then.txt 
+  346  cat no-and-then.txt 
+  347  cat and-then.txt 
+  348  cat no-and-then.txt 
+  349  cp no-and-then.txt and-then.txt 
+  350  cat no-and-then.txt 
+  351  cp no-and-then.txt and-then.txt 
+  352  cat and-then.txt 
+  353  cat no-and-then.txt 
+  354  man history
+  355  history
+  356  history > command-history.txt
