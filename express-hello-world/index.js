@@ -1,10 +1,9 @@
 const express = require('express');
 const app = express();
 
-app.use(function (req, res, next) {
+app.use(function (req, res) {
   // console.log('Request Type:', req.method);
   res.send('This is a response string');
-  next();
 });
 
 app.listen(3000, function () {
