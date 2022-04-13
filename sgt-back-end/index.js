@@ -41,7 +41,7 @@ app.post('/api/grades/', (req, res) => {
     res.status(400).json({ error: 'Must include a valid course' });
   } else if (!score) {
     res.status(400).json({ error: 'Must include a valid score' });
-  } else if (score < 0 || score > 100 || isNaN(score)) {
+  } else if (score < 0 || score > 100 || !Number.isInteger(score)) {
     res.status(400).json({ error: 'Score must be a positve integer between 0 & 100' });
   } else {
     const insertSql = `
@@ -77,8 +77,8 @@ app.put('/api/grades/:gradeId', (req, res) => {
     res.status(400).send({ error: 'must include a valid course' });
   } else if (!score) {
     res.status(400).send({ error: 'must include a valid score' });
-  } else if (isNaN(score) || score < 0 || score > 100) {
-    res.status(400).send({ error: 'score must be a number between 0 and 100' });
+  } else if (!Number.isInteger(score) || score < 0 || score > 100) {
+    res.status(400).send({ error: 'score must be a positive integer between 0 and 100' });
   } else {
     var sql = `
     select "gradeId",
@@ -121,7 +121,7 @@ app.put('/api/grades/:gradeId', (req, res) => {
 
 app.delete('/api/grades/:gradeId', (req, res) => {
   const gradeId = Number(req.params.gradeId);
-  if (gradeId <= 0 || isNaN(gradeId)) {
+  if (gradeId <= 0 || !Number.isInteger(gradeId)) {
     res.status(400).send({ error: 'gradeId must be a positive integer' });
   } else {
     var sql = `
