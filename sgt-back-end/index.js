@@ -69,7 +69,7 @@ app.put('/api/grades/:gradeId', (req, res) => {
   const course = req.body.course;
   const score = req.body.score;
 
-  if (gradeId <= 0 || isNaN(gradeId)) {
+  if (gradeId <= 0 || !Number.isInteger(gradeId)) {
     res.status(400).send({ error: 'gradeId must be a postitve integer' });
   } else if (!name) {
     res.status(400).send({ error: 'must include a valid name' });
